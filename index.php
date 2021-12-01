@@ -1,7 +1,7 @@
 <?php
 //Creare una variabile con un paragrafo di testo a vostra scelta.
 $pragraphText = "lorem Lorem, fucking dolor sit amet consectetur adipisicing elit. Voluptatem dolorem, quam possimus cumque nisi dignissimos sed illum praesentium tempora aut, aliquam mollitia ea voluptatibus esse cum consequuntur non id error";
-$brutteParole = $get['parole'];
+$brutteParole = $_GET["parole"];
 //Una parola da censurare viene passata dall'utente tramite parametro GET.
 $censurato = str_replace($brutteParole, "***", $pragraphText);
 ?>
